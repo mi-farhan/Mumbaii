@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".Activity2">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="300dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_filled"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="300dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_filled"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:onClick="signup"/>
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="40dp"
+            android:text="- - - - - - - - - - - - - - - - OR - - - - - - - - - - - - - - - -"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="40dp"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/google_btn"
+            android:layout_width="290dp"
+            android:layout_height="39dp"
+            android:background="#dd4b39"
+            android:text="Google"
+            android:layout_marginLeft="34dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+
+
+
+        <Button
+            android:id="@+id/fb"
+            android:layout_width="290dp"
+            android:layout_height="39dp"
+            android:background="#416BC1"
+            android:text="FaceBook"
+            android:layout_marginLeft="34dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
